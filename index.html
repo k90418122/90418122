@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://90418152.github.io/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>貓咪品種介紹</title>
+<script language="JavaScript">
+
+function initArray() {
+for (var i = 0; i < initArray.arguments.length; i++) {
+this[i] = initArray.arguments[i];
+}
+this.length = initArray.arguments.length;
+}
+var colors = new initArray(
+"#FF0000",
+"#FF9900",
+"#ffd700",
+"#00FF00",
+"#B9B973",
+"#FF00FF");
+delay = 1; // seconds
+link = 0;
+vlink = 2;
+function linkDance() {
+link = (link+1)%colors.length;
+vlink = (vlink+1)%colors.length;
+document.linkColor = colors[link];
+document.vlinkColor = colors[vlink];
+setTimeout("linkDance()",delay*1000);
+}
+linkDance();
+
+
+</script>
+<style type="text/css">
+p { font-size: 15pt;
+
+    background-color:yellow;
+    text-align:left;
+}
+a { font-size: 15pt;
+    text-align: center;
+}
+html {
+            height: 100%;
+        }
+body {
+            background-image: images/111.jpg;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+</style>
+</head>
+<body background="images/111.jpg"text="#000000"  link="#0066cc" vlink="#336600" >
+
+<h2><center>貓咪品種介紹</center></h2>
+<hr>
+<center><a href="cat2.html">孟加拉豹貓</a></center>
+<center><img src="images\cat5.jpg" alt="" height="150"></center>
+<center><a href="cat1.html">挪威森林貓</a></center>
+<center><img src="images\cat1.jpg" alt="" height="150"></center>
+<center><a href="cat4.html">美國短毛貓</a></center>
+<center><img src="images\cat4.jpg" alt="" height="150"></center>
+<center><a href="cat3.html">曼赤肯貓</a></center>
+<center><img src="images\cat2.jpg" alt="" height="150"></center>
+
+
+
+</body></html>

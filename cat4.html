@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://90418152.github.io/link.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>美國短毛貓</title>
+<script language:JavaScript>
+<!--
+today= new Date()
+dateValue=(today.getYear()-11)+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日";
+window.alert("\n歡迎光臨^^\n\n現在顯示美國短毛貓的照片\n\n今天是"+dateValue);
+//-->
+
+
+
+//循序播放陣列中指定的圖檔
+var jsImg = new Array("images/301.jpg","images/302.jpg","images/303.jpg","images/304.jpg",
+"images/305.jpg",);
+var jsImg_len = jsImg.length;  // 圖檔數量
+// 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+var i=2;                       //起始照片  2 為 003.jpg
+//設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+setInterval("sequentialImg()",1000);
+function sequentialImg(){  //循序播放
+   document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[i]+"' width=450 height=400>";
+       i++;
+       if(i>=jsImg_len)  i=0;
+}
+
+
+</script>
+
+<style type="text/css">
+#p1 { font-size: 20pt;
+    color: red;
+    background-color:;
+    text-align: left;
+}
+
+a { font-size: 20pt;
+    color:red;
+    background-color:;
+    text-align: left;
+}
+html {
+            height: 100%;
+        }
+body {
+            background-image: images\bake.jpg;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+</style>
+</head>
+<body background="images/222.jpg"  onload="sequentialImg();">
+
+<center><div id="my_div"><img src="./index3_files/fcar02.jpg" width="1000" height="500"></div></center>
+<p><font face="cursive">美國短毛貓（英語：American Shorthair）是原產美國的一種貓，其祖先為歐洲早期移民帶到北美的貓種，與英國短毛貓和歐洲短毛貓同類。據記載，五月花號上攜帶了數隻貓以幫助除鼠。該品種的貓是在街頭巷尾收集來的貓當中選種、並和進口品種如英國短毛貓、緬甸貓和波斯貓雜交培育而成。美國短毛貓在歐洲很罕見，但在日本頗受好評，在美國國內也較受歡迎。
+美國短毛貓的特點是外觀漂亮，活潑，性格溫柔，容易和人類相處，很適合家庭飼養，壽命一般為15到20年。美國短毛貓約有80多種毛色和外觀。包括褐虎斑、銀斑等等。其中較著名的是銀虎斑，這種貓毛髮背景為銀色，覆蓋有濃厚的黑色斑紋。美國短毛貓在1966年正式定名，以紀念其原產地美國。
+</font><br></p>
+<p id=p1><a href="index.html">返回主頁面</a></p>
+
+
+
+</body>
+</html>

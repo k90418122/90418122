@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://90418152.github.io/car3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>曼赤肯貓</title>
+
+<style type="text/css">
+#p1 { font-size: 20pt;
+    color: red;
+    background-color:;
+    text-align: left;
+}
+
+a { font-size: 20pt;
+    color:red;
+    background-color:;
+    text-align: left;
+}
+html {
+            height: 100%;
+        }
+body {
+            background-image: images\bake.jpg;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+</style>
+<script type="text/javascript">
+             //循序播放陣列中指定的圖檔
+            var jsImg = new Array("images/400.jpg","images/401.jpg","images/402.jpg","images/402.jpg","images/403.jpg","images/404.jpg",
+            "images/405.jpg","images/406.jpg","images/407.jpg","images/408.jpg","images/409.jpg");
+            var jsImg_len = jsImg.length;  // 圖檔數量
+            // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+            var i=2;                       //起始照片  2 為 003.jpg
+            //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+            setInterval("sequentialImg()",2000);
+            function sequentialImg(){  //循序播放
+                document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[i]+"' width=400 height=450>";
+                    i++;
+                    if(i>=jsImg_len)  i=0;
+            }
+
+
+            //時間
+            var timer = null;
+            // 顯示數字圖片
+            function displayClock(num) {
+              var dig = parseInt(num/10);
+              var timetag="<img src='images//" + dig + ".gif'>";
+              dig = num%10;
+              timetag +="<img src='images//" + dig + ".gif'>";
+              return timetag;
+            }
+            // 停止計時
+            function stopClock() {
+               clearTimeout(timer);
+            }
+            // 開始計時
+            function startClock() {
+               var time = new Date();
+               // 取得時間
+               var hours = displayClock(time.getHours()) + ":";
+               var minutes = displayClock(time.getMinutes()) + ":";
+               var seconds = displayClock(time.getSeconds());
+               // 顯示時間
+               show.innerHTML = hours + minutes + seconds;
+               timer = setTimeout("startClock()",1000);
+            }
+
+
+
+
+    </script>
+
+</head>
+<body background="images/222.jpg" onload="startClock()" onload="stopClock()" onload="sequentialImg();">
+
+<p id=p1>曼赤肯貓</p>
+<center><div id="my_div"><img src="images/401.jpg" width="400" height="450"></div></center>
+<p><font face="cursive">曼切堪貓、曼赤肯貓或曼基康貓（Munchkin）又叫短腿貓或臘腸貓，是一種新創的貓品種，有著極短四肢的小矮貓。曼切堪貓有著各色長短不同的皮毛．牠們短小的四肢由基因突變造成。因為牠們矮短的身材，曼切堪貓並不擅於爬或跳等動作，且只適於室內生活，但性格異常的好動、喜歡敏捷和快速的奔跑。
+
+
+此品種起源自1983年，當Sandra Hochenedel發現一隻極短腿的黑貓住在路易斯安那的拖車下。這隻名為黑莓（Blackberry）的貓懷孕並產下半數短腿小貓。黑莓的小貓中，一隻名為Tolouse的公貓成為一個育種計畫的種公並在北美建立了這個品種。[1]
+
+國際貓科臨床權威博士教授Dr.Nicholas H.Dodnan表示，外觀短腿的貓極易發生胸部凹陷(漏斗胸)及脊柱前灣下沉等先天性遺傳骨骼問題，影響呼吸系統及心臟等重要維生器官健康 和生育繁殖問題，並不是很健康的貓種， 由於對種類健康問題的種種爭議，曼切堪貓並未受到所有育貓協會的承認，目前僅有一家國際育貓協會承認，其餘貓會皆不承認此為品種貓。曼切堪貓被國際貓協會（TICA）所接受，但並未被貓迷協會（CFA），歐洲貓協聯盟（FIFe）等組織接受。
+
+
+因為短腿基因是顯性的緣故，66.6％由曼切堪貓父母生下的小貓會是標準的曼切堪貓，33.3％會是非短腿的貓。此基因所造成的症狀為季肋發育不全，需注意與人類軟骨發育不全症的變因不同
+</font><br></p>
+<center>現在時間:<div id="show"></div></center>
+<p id=p1><a href="index.html">返回主頁面</a></p>
+
+
+
+</body></html>

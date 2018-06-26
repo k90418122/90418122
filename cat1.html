@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://90418152.github.io/car2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>挪威森林貓介紹</title>
+<style type="text/css">
+#p1 { font-size: 20pt;
+    color: red;
+    background-color:;
+    text-align: left;
+}
+
+a { font-size: 20pt;
+    color:red;
+    background-color:;
+    text-align: left;
+}
+html {
+            height: 50%;
+        }
+body {
+            background-image: images\bake.jpg;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+</style>
+<script type="text/javascript">
+             //循序播放陣列中指定的圖檔
+            var jsImg = new Array("images/101.jpg","images/102.jpg","images/103.jpg","images/104.jpg",
+            "images/105.jpg","images/106.jpg",);
+            var jsImg_len = jsImg.length;  // 圖檔數量
+            // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+            var i=2;                       //起始照片  2 為 003.jpg
+            //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+            setInterval("sequentialImg()",2000);
+            function sequentialImg(){  //循序播放
+                document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[i]+"' width=500 height=350>";
+                    i++;
+                    if(i>=jsImg_len)  i=0;
+            }
+
+    </script>
+</head>
+<body background="images/222.jpg" onload="sequentialImg();">
+
+<p id=p1>挪威森林貓介紹</p>
+<center><div id="my_div"><img src="./index2_files/hcar02.jpg" width="1000" height="500"></div></center> <!--—把前面這個 div 放到你想輪播圖片的位置去 ---->
+<p><font face="cursive">在古老的挪威神話中，有兩頭如獅子一樣灰色的貓，拖著主宰豐饒和愛情的女神弗蕾雅的神車，飛馳天際，這兩頭貓，非常強壯和身形巨大，這個神話一代一代的口傳。而神話中巨大的貓，跟現代的挪威森林貓的描述非常相似。因此，挪威森林貓的來源可以追溯千年的歷史。
+
+由於長久而來這一個神話都只是口述，直至1835年，民俗學家 Peter Christian Asbjørnsen 和詩人 Jørgen Moe 撰寫並出版了一套精選的挪威民間故事和民歌，而令挪威森林貓的廣為人知。
+
+然而本來在長居森林的長毛貓，因為跟普通短毛家貓混雜，而由於短毛基因是顯性，而主宰長毛的是隱性基因，因此大部分的後代都變成短毛，純種的長毛挪威森林貓在長期交雜後，變得越來越少，在1930年代，開始有挪威的純種貓配育員開始關注這種傳說中的貓正在逐漸消失，便開始策劃繁殖計劃。由於早期要找到完全純種和符合標準的森林貓非常艱難，早期的繁殖計劃可以說是裹足不前。一群熱誠的保衛挪威國貓配育員繼續努力不懈，得到驕人的成果，在二次大戰前，已經有挪威森林貓在奧斯陸的貓展中出現。在1973年，經過多年的努力爭取，挪威森林貓在法國巴黎，被 FiFé 認同，並列為 FiFé 認可的純種貓。
+</font><br></p>
+<p id=p1><a href="index.html">返回主頁面</a></p>
+
+
+
+</body></html>
